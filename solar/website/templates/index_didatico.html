@@ -1,0 +1,23 @@
+<h1>SOLARRRR</h1>
+
+{{name}}
+<ol>
+{% for item in lista_tecnologia %}
+{% if item == 'Django' %}
+<li> <b>{{item}}</b></li>
+{%else %}
+    <li>{{item}}</li>
+{% endif %}
+{% endfor %}
+
+</ol>
+
+<ol>
+{% for post in posts %}
+    <h2> {{ post.title }}</h2>
+    <h3> {{ post.sub_title }}</h3>
+    <p> {{ post.content }}</p>
+
+{% endfor %}
+
+</ol>
